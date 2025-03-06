@@ -9,11 +9,12 @@ double earthAndRope(double earthRadius, double addedLength) {
     double initialFerence = earth.getFerence();
     earth.setFerence(initialFerence + addedLength);
 
-    double gap = earth.getRadius() - (earthRadius * 1000); // gap value in meters
+    // gap value in meters
+    double gap = earth.getRadius() - (earthRadius * 1000);
     return gap;
 }
 
-double pool(double poolRadius, double walkwayWidth, 
+double pool(double poolRadius, double walkwayWidth,
     double concreteCostPerM2, double fenceCostPerM) {
     Circle pool(poolRadius);
     double poolArea = pool.getArea();

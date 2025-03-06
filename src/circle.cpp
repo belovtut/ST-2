@@ -8,12 +8,11 @@ Circle::Circle(double r) {
     if (r >= 0) {
         radius = r;
         recalculateFromRadius();
-	}
-    else {
+    } else {
         radius = 0;
         ference = 0;
         area = 0;
-	}
+    }
 }
 
 void Circle::recalculateFromRadius() {
@@ -35,21 +34,21 @@ void Circle::setRadius(double r) {
     if (r >= 0) {
         radius = r;
         recalculateFromRadius();
-	}
+    }
 }
 
 void Circle::setFerence(double f) {
     if (f >= 0) {
         ference = f;
         recalculateFromFerence();
-	}
+    }
 }
 
 void Circle::setArea(double a) {
     if (a >= 0) {
         area = a;
         recalculateFromArea();
-	}
+    }
 }
 
 double Circle::getRadius() { return radius; }

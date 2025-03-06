@@ -16,7 +16,7 @@ class Circle {
     void recalculateFromArea();
 
  public:
-    Circle(double r);
+    explicit Circle(double r);
 
     void setRadius(double r);
     void setFerence(double f);
